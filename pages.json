@@ -1,0 +1,148 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			/* "style": {
+			        "navigationBarTitleText": "童车系统",
+			        "app-plus": {
+			            "titleNView": {
+							"type": "transparent",
+			                "buttons": [
+			                    {
+			                        "text": "门店",
+			                        "fontSize": "14px",
+			                        "float": "left",
+									"color":"#FFFFFF"
+			                    },
+			                    {
+			                       "text": "经销商",
+			                       "fontSize": "14px",
+			                       "float": "right",
+			                       "color":"#FFFFFF"
+			
+			                    }
+			                ]
+			            }
+			        } 
+					"app-plus":{"titleNView":false} 
+			    } */
+				"style": {
+				    // #ifdef MP
+					"navigationBarTitleText": "童车系统",
+					//"navigationStyle": "custom",
+					// #endif 
+					"app-plus": {
+						"titleNView": {
+							"type": "transparent",
+							/* "searchInput": {
+								"backgroundColor": "rgba(231, 231, 231,.7)",
+								"borderRadius": "16px",
+								"placeholder": "请输入地址 如：大钟寺",
+								"disabled": true,
+								"placeholderColor": "#606266"
+							}, */
+							"navigationBarTitleText": "童车系统",
+							"buttons": [{
+									"text": "门店",
+									"fontSize": "14",
+									"color": "#303133",
+									"float": "left",
+									"background": "rgba(0,0,0,0)",
+									"width":"50px"
+								},
+								{
+									"text": "经销商",
+									"fontSize": "14",
+									"color": "#303133",
+									"float": "right",
+									"background": "rgba(0,0,0,0)",
+									"width":"50px"
+									/* "badgeText":"3" */
+									/* "redDot": true */
+									
+								}
+							]
+						}
+					}
+				}
+			
+		},
+		{
+			"path": "pages/listDetail/listDetail",
+			"style": {
+				"navigationBarTitleText": "详情展示",
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent"
+					}
+				}
+			}
+			
+		},
+		{
+			"path": "pages/order/orderConfirm",
+			"style": {
+				"navigationBarTitleText": "订单确认",
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent"
+					}
+				}
+			}
+			
+		},
+		{
+			"path": "pages/order/orderReceive",
+			"style": {
+				"navigationBarTitleText": "待收货",
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent"
+					}
+				}
+			}
+			
+		},
+		{
+			"path": "pages/order/orderDetail",
+			"style": {
+				"navigationBarTitleText": "订单详情",
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent"
+					}
+				}
+			}
+			
+		},
+		{
+			"path": "pages/receiveAddress/receiveAddress",
+			"style": {
+				   "app-plus":{"titleNView":false} 
+				}
+		},
+		{
+			"path": "pages/order/orderManage",
+			"style": {
+				   "app-plus":{"titleNView":false} 
+				}
+		},
+		{
+			"path": "pages/store/storeInform",
+			"style": {
+				"navigationBarTitleText": "门店",
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent"
+					}
+				}
+			}
+		}
+	],
+	"globalStyle": {
+		/* "navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app", */
+		"navigationBarBackgroundColor": "#f9723a",
+		"backgroundColor": "#F8F8F8"
+	}
+}
